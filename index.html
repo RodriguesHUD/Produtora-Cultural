@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Metatag para ser responsivo-->
+    <title>LW</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <!--Link para o arquivo css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/svg" sizes="300x300" href="favicon.svg" />
+  </head>
+
+  <body id="body">
+    <!--CABEÇALHO-->
+    <div class="header" id="header">
+      <button onclick="toggleSidebar()" class="btn_icon_header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
+
+      <div class="logo_header">
+        <img src="Logo-LW.png" alt="Logo GN" class="img_logo_header" />
+        <img src="Logo-texto.png" alt="Logo GN" class="img_logo_header_tx" />
+      </div>
+
+      <div class="navigation_header" id="navigation_header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+
+        <a href="#" class="active">Home</a>
+        <a href="#" class="active">Eventos</a>
+        <a href="#" class="active">Sobre</a>
+        <a href="#" class="active">Contato</a>
+      </div>
+    </div>
+    <div class="content" id="content"></div>
+
+    <img
+      tabindex="0"
+      onclick="closeSidebar()"
+      onfocus="closeSidebar()"
+      class="backGroundImage"
+      src="capa-fundo.svg"
+    />
+    <!--FIM DO CABEÇALHO-->
+
+    <section class="container">
+      <!-- <img class="backGroundImage" src="capa-fundo.svg" alt="imagem-show">   esta imagem precisou ser reposicionada e o container acabou ficando vazio -->
+    </section>
+
+    <!-- Início do container 2 -->
+    <section class="container2">
+      <h1 class="viva">VIVA UMA EXPERIÊNCIA ÚNICA</h1>
+      <main class="cards">
+        <section class="card">
+          <img src="2-pessoas.svg" alt="2 pessoas" />
+          <h3>Casal</h3>
+          <span
+            >Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit.praesentium suscipit placeat sunt.</span
+          >
+          <button>Saiba mais</button>
+        </section>
+        <section class="card">
+          <img src="3-pessoas.svg" alt="3 pessoas" />
+          <h3>Grupo de amigos</h3>
+          <span
+            >Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit.praesentium suscipit placeat sunt.</span
+          >
+          <button>Saiba mais</button>
+        </section>
+        <section class="card">
+          <img src="5-pessoas.svg" alt="5 pessoas" />
+          <h3 class="h3">Empresa</h3>
+          <span
+            >Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit.praesentium suscipit placeat sunt.</span
+          >
+          <button>Saiba mais</button>
+        </section>
+      </main>
+    </section>
+    <!-- Fim do container 2 -->
+
+    <section class="container3">
+      <!--Container 3-->
+      <h2>Entre em contato e faça seu orçamento</h2>
+      <img src="fotografo.svg" />
+
+      <form action="" method="post">
+        <!--formulário-->
+        <h1>Fale conosco</h1>
+        <div>
+          <input type="text" placeholder="Nome completo" class="inputs" />
+          <span class="span-required"
+            >Nome deve ter no mínimo 3 caracteres</span
+          >
+        </div>
+
+        <div>
+          <input type="email" placeholder="E-mail" class="inputs" />
+          <span class="span-required">Digite um e-mail válido</span>
+        </div>
+
+        <div>
+          <input type="telefone" placeholder="Telefone" class="inputs" />
+        </div>
+
+        <div>
+          <input type="cidade" placeholder="Cidade/UF" class="inputs" />
+        </div>
+
+        <div>
+          <input type="empresa" placeholder="Empresa" class="inputs" />
+        </div>
+
+        <textarea
+          class="inputs"
+          name="descricao"
+          id="descricao"
+          cols="30"
+          rows="10"
+          placeholder="Descreva o objetivo do seu evento:"
+        ></textarea>
+
+        <button class="formButton" type="submit">Enviar</button>
+      </form>
+      <!--formulário-->
+    </section>
+    <!--Container 3-->
+
+    <footer>
+      <!--Início do Rodapé-->
+      <div class="container-footer">
+        <div class="row">
+          <div class="col" id="company">
+            <img src="Logo-LW.png" alt="" class="logo" />
+            <p>Realizando eventos que marcam sua vida.</p>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col" id="services">
+            <h3>Serviços</h3>
+            <div class="links">
+              <a href="#">Aniversários</a>
+              <a href="#">Corporativos</a>
+              <a href="#">Shows</a>
+              <a href="#">E-events</a>
+            </div>
+          </div>
+          <div class="col" id="useful-links">
+            <h3>Links</h3>
+            <div class="links">
+              <a href="#">Sobre</a>
+              <a href="#">Serviços</a>
+              <a href="#">Políticas de privacidae</a>
+              <a href="#">Ajuda</a>
+            </div>
+          </div>
+
+          <div class="col" id="contact">
+            <h3>Contato</h3>
+            <div class="contact-details">
+              <i class="fa fa-location"></i>
+              <p>Avenida rio Branco 152, Centro. Rio ded Janeiro</p>
+            </div>
+
+            <div class="contact-details">
+              <i class="fa fa-phone"></i>
+              <p>+55 (21) 98067-3586</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form">
+            <form action="" method="post">
+              <label for="email"></label>
+              <input id="email" type="email" placeholder="Email here..." />
+              <button type="submit" submit>
+                <i class="fa fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="Copyright">
+        <a>Copyright © LW 2022 - Todos os direitos reservados.</a>
+      </div>
+    </footer>
+    <!--Fim do Rodapé-->
+  </body>
+
+  <script src="./app.js"></script>
+</html>
